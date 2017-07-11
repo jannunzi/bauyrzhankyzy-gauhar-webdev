@@ -15,9 +15,9 @@
 
 **Required Links:**
 
-    Heroku App: https://bauyrzhankyzy-gauhar-webdev.herokuapp.com/
+   Heroku App: https://bauyrzhankyzy-gauhar-webdev.herokuapp.com/
 
-    Assignment: https://bauyrzhankyzy-gauhar-webdev.herokuapp.com/assignment/
+   Assignment: https://bauyrzhankyzy-gauhar-webdev.herokuapp.com/assignment/
 
-    Project: https://bauyrzhankyzy-gauhar-webdev.herokuapp.com/project/index.html
+   Project: https://bauyrzhankyzy-gauhar-webdev.herokuapp.com/project/index.html
 
