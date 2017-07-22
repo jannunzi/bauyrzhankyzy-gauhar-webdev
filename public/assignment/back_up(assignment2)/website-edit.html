@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>New Website</title>
+    <title>Edit Website</title>
     <!--  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/> -->
     <link href="../../vendor/bootstrap/dist/css/bootstrap.min.css"
           rel="stylesheet"/>
@@ -12,28 +12,33 @@
 
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
+        <div class="container-fluid">
 
-        <a href="website-list.html">
-            <span class="pull-right glyphicon glyphicon-ok"></span></a>
+            <a href="website-list.html">
+                <span class="pull-right glyphicon glyphicon-ok"></span></a>
 
-        <a class="navbar" href="website-list.html">
-            <span class="glyphicon glyphicon-chevron-left"></span>New Website</a>
+            <a class="navbar" href="website-list.html">
+                <span class="glyphicon glyphicon-chevron-left"></span>Edit Website</a>
+        </div>
+
     </div>
 </nav>
 
 <div class="container-fluid">
 
     <div class="row">
-        <div class="col-sm-3 hidden-xs hidden-sm">
+        <!--  <div class="col-xs-3 visible-lg split-view-left"> -->
+        <div class="col-sm-4 hidden-xs scrollable-left">
+
             <ul class="list-group">
 
                 <li class="list-group-item">
                     <div class="row">
-                        <div class="col-xs-10">Wikipedia</div>
+                        <div class="col-xs-10">
+                            <a href="page-list.html">Wikipedia</a>
+                        </div>
                         <div class="col-xs-2">
-                            <a href="website-edit.html">
-                                <span class="pull-right glyphicon glyphicon-cog"></span>
-                            </a>
+                            <span class="pull-right glyphicon glyphicon-cog"></span>
                         </div>
                     </div>
                 </li>
@@ -41,9 +46,7 @@
                     <div class="row">
                         <div class="col-xs-10">Facebook</div>
                         <div class="col-xs-2">
-                            <a href="website-edit.html">
-                                <span class="pull-right glyphicon glyphicon-cog"></span>
-                            </a>
+                            <span class="pull-right glyphicon glyphicon-cog"></span>
                         </div>
                     </div>
                 </li>
@@ -51,9 +54,7 @@
                     <div class="row">
                         <div class="col-xs-10">Twitter</div>
                         <div class="col-xs-2">
-                            <a href="website-edit.html">
-                                <span class="pull-right glyphicon glyphicon-cog"></span>
-                            </a>
+                            <span class="pull-right glyphicon glyphicon-cog"></span>
                         </div>
                     </div>
                 </li>
@@ -65,44 +66,40 @@
                         </div>
                     </div>
                 </li>
+
             </ul>
         </div>
 
-        <div class="col-xs-12 col-md-9 col-lg-9 split-view-right">
+        <!--  <div class="col-xs-12 col-lg-9 split-view-right"> -->
+        <div class="col-xs-12 col-sm-8 split-view-right">
 
             <label for="name">Name</label>
-            <input name="website"
-                   placeholder="Facebook"
+            <input id="name"
                    class="form-control"
-                   id="name"/>
+                   value="Facebook"/>
 
             <label for="description">Description</label>
-            <textarea name="description of the website"
+            <textarea id="description"
                       rows="5"
-                      placeholder="Social network that allows people to connect with each other"
-                      class="form-control"
-                      id="description"></textarea>
-
-            <a class="btn btn-default btn-primary btn-block"
-               href="website-list.html"
-               role="button">Create</a>
+                      class="form-control">Social network that allows people to connect with each other
+            </textarea>
 
             <a class="btn btn-default btn-danger btn-block"
                href="website-list.html"
-               role="button">Cancel</a>
+               role="button">Delete</a>
         </div>
     </div>
+
 
 </div>
 
 <nav class="navbar navbar-default navbar-fixed-bottom">
     <div class="container-fluid">
-        <a href="../User/profile.html">
+        <a href="profile.html">
             <span class="pull-right glyphicon glyphicon-user"></span>
         </a>
     </div>
 </nav>
-
 </body>
 
 </html>

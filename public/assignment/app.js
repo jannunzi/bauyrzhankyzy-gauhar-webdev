@@ -4,6 +4,6 @@
 // thus, invoking everything as one big function (module)
 (function () {
     angular
-        .module("WamApp", ["ngRoute"]);
+        .module('WamApp', ['ngRoute']);
 })();
 

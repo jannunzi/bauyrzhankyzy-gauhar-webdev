@@ -13,15 +13,18 @@
     }
 
     var api = {
-        "findUserbyUsernameAndPassword": findUserbyUsernameAndPassword
+        "findUserbyUsernameAndPassword": findUserbyUsernameAndPassword,
+        "findUserById": findUserById
     };
     return api;
 
     function findUserById(userId) {
         for(var u in users) {
-            if(users)
+            if(users[u]._id === userId) {
+                return users[u];
+            }
         }
-
+        return null;
     }
 
     function findUserbyUsernameAndPassword(username, password) {
@@ -29,11 +32,10 @@
             var _user = users[u];
             if (_user.username === user.username
                 && _user.password === user.password) {
-                // navigates user to his/her profile
-                $location.url("profile/" + _user._id);
+                return _user;
             }
         }
-        $scope.errorMessage = "User not found";
+        return null;
     }
 
-})
+})();
