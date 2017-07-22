@@ -20,5 +20,5 @@
 
    Assignment: https://bauyrzhankyzy-gauhar-webdev.herokuapp.com/assignment/
 
-   Project: https://bauyrzhankyzy-gauhar-webdev.herokuapp.com/project/index.html
+   Project: https://poetryparadise.herokuapp.com/
 
